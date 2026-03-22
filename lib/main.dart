@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:user_finder/screens/my_user_finder.dart';
 
 void main() {
   runApp(const MyUserFinder());
@@ -15,6 +16,7 @@ class MyUserFinder extends StatelessWidget {
           title: Text("User Finder"),
           backgroundColor: Colors.grey[300],
         ),
+        body: MyUserFinderScreen(),
       ),
     );
   }
