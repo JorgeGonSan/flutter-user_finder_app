@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:user_finder/services/api_service.dart';
+import 'package:user_finder/widgets/my_list_view_builder.dart';
 
 class MyUserFinderScreen extends StatefulWidget {
   const MyUserFinderScreen({super.key});
@@ -29,7 +30,7 @@ class _MyUserFinderScreenState extends State<MyUserFinderScreen> {
           }
           //Si hay datos, muestro todo cargado
           if (snapshot.hasData) {
-            return Center(child: Text("Usuarios cargados"));
+            return MyListViewBuilder(usuarios: snapshot.data);
           }
           //Si todo lo demas falla, muesto msg
           return Center(child: Text("Nada a mostrar"));
