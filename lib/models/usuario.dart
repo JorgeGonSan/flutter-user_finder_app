@@ -25,7 +25,7 @@ class Usuario {
     final fullNameApi = "$firstNameApi $lastNameApi";
     final emailApi = datosjson['email'] ?? 'Sin email';
     final ciudadApi = datosjson['location']?['city'] ?? 'Sin definir';
-    final urlAvatarApi = datosjson['picture']?['medium'] ?? 'Sin iamgen';
+    final urlAvatarApi = datosjson['picture']?['large'] ?? 'Sin iamgen';
     final telefonoApi = datosjson['phone'] ?? 'Sin definir';
     final edadApi = datosjson['dob']?['age'] ?? 0;
     final generoApi = datosjson['gender'] ?? "Sin definir";
