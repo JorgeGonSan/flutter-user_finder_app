@@ -13,7 +13,7 @@ class ApiService {
     List<Usuario> usuarios = [];
 
     //asigno URL y lo parseo a una dirrecion
-    final url = Uri.parse('https://randomuser.me/api/?results=10');
+    final url = Uri.parse('https://randomuser.me/api/?results=100');
 
     /*
     Hago llamada a la direccion http.get(url) y espero en segundo
